@@ -146,12 +146,12 @@ class Header extends Component {
                 <div className="text-white">
                     <div className="container">
                         <div className="row" style={headerStyle}>
-                            <div width="auto">
+                            <div style={{ width: "fit-content" }}>
                                 <a href="/" className="d-flex align-items-center my-2 my-lg-0 me-lg-auto text-white text-decoration-none">
                                     <img className="m-auto" width="240" height="auto" src={siteLogo} alt="Peace Marketing Logo" />
                                 </a>
                             </div>
-                            <div width="auto">
+                            <div style={{ width: "fit-content" }}>
                                 <ul className="nav col-lg-auto my-2 justify-content-center my-md-0 text-small">
                                     <li>
                                         <a href="https://www.facebook.com/peace-marketingau" className="nav-link text-white">

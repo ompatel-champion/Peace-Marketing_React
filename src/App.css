@@ -26,10 +26,6 @@ h1 {
 @media (min-width: 1200px) {  
   h1 {font-size:3.5rem;} /*1rem = 16px*/    
 }
-#home-banner {
-    background-image: url("./assets/imgs/home/home_banner.webp");
-    background-size: cover;
-}
 #home-banner .background-overlay {
     background-color: rgba(0,0,0,.95);
     opacity: .9;
@@ -157,6 +153,7 @@ footer .social-icons i {
 section {
     padding-left: 20px;
     padding-right: 20px;
+    position: relative;
 }
 @media (max-width: 768px) {  
   h1 {

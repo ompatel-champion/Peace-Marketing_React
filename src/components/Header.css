@@ -132,6 +132,9 @@ header > nav {
 #menu-form p:first-child {
     border-bottom: solid white;
 }
+#tsparticles canvas {
+   position: relative;
+}
 @media (max-width: 768px) {
     header > div div:last-child ul {
         display: none;
