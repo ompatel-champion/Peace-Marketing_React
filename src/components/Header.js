@@ -81,6 +81,12 @@ class Header extends Component {
             height: "auto"
         }
 
+        const headerStyle = {
+            display: "flex",
+            justifyContent: "space-between",
+            alignItems: "center"
+        }
+
         return (
             <header>
                 <nav role="navigation">
@@ -139,16 +145,13 @@ class Header extends Component {
                 </nav>
                 <div className="text-white">
                     <div className="container">
-                        <div className="row">
-                            <div className="col-md-5 col-sm-4 col-4">
-
-                            </div>
-                            <div className=" col-md-2 col-sm-4 col-4 text-center">
+                        <div className="row" style={headerStyle}>
+                            <div width="auto">
                                 <a href="/" className="d-flex align-items-center my-2 my-lg-0 me-lg-auto text-white text-decoration-none">
-                                    <img className="m-auto" width="auto" height="90" src={siteLogo} alt="Peace Marketing Logo" />
+                                    <img className="m-auto" width="240" height="auto" src={siteLogo} alt="Peace Marketing Logo" />
                                 </a>
                             </div>
-                            <div className="col-md-5 col-sm-4 col-4 text-right align-self-center">
+                            <div width="auto">
                                 <ul className="nav col-lg-auto my-2 justify-content-center my-md-0 text-small">
                                     <li>
                                         <a href="https://www.facebook.com/peace-marketingau" className="nav-link text-white">
