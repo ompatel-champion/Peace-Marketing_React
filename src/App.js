@@ -1,45 +1,52 @@
-import React, { useRef, useEffect } from 'react';
-import { useLocation, Switch } from 'react-router-dom';
-import AppRoute from './utils/AppRoute';
-import ScrollReveal from './utils/ScrollReveal';
-import ReactGA from 'react-ga';
+import './App.css';
+import Header from './components/Header';
+import HomeBanner from './components/HomeLayouts/HomeBanner';
+import HomeWhatWeDo from './components/HomeLayouts/HomeWhatWeDo';
+import HomeSuccess from './components/HomeLayouts/HomeSuccess';
+import HomeTeam from './components/HomeLayouts/HomeTeam';
+import HomePeopleTalk from './components/HomeLayouts/HomePeopleTalk';
+import HomeProjects from "./components/HomeLayouts/HomeProjects";
+import HomeSubscribe from './components/HomeLayouts/HomeSubscribe';
+import Footer from './components/Footer';
+import { Component } from 'react';
+import ScrollTopBtn from './components/ScrollTopBtn';
 
-// Layouts
-import LayoutDefault from './layouts/LayoutDefault';
+class App extends Component {
+  render() {
+    return (
+      <div className="App">
+        <Header>
+        </Header>
 
-// Views 
-import Home from './views/Home';
+        <HomeBanner>
+        </HomeBanner>
 
-// Initialize Google Analytics
-ReactGA.initialize(process.env.REACT_APP_GA_CODE);
+        <HomeWhatWeDo>
+        </HomeWhatWeDo>
 
-const trackPage = page => {
-  ReactGA.set({ page });
-  ReactGA.pageview(page);
-};
+        <HomeSuccess>
+        </HomeSuccess>
 
-const App = () => {
+        <HomeTeam>
+        </HomeTeam>
 
-  const childRef = useRef();
-  let location = useLocation();
+        <HomePeopleTalk>
+        </HomePeopleTalk>
 
-  useEffect(() => {
-    const page = location.pathname;
-    document.body.classList.add('is-loaded')
-    childRef.current.init();
-    trackPage(page);
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [location]);
+        <HomeProjects>
+        </HomeProjects>
 
-  return (
-    <ScrollReveal
-      ref={childRef}
-      children={() => (
-        <Switch>
-          <AppRoute exact path="/" component={Home} layout={LayoutDefault} />
-        </Switch>
-      )} />
-  );
+        <HomeSubscribe>
+        </HomeSubscribe>
+
+        <Footer>
+        </Footer>
+
+        <ScrollTopBtn></ScrollTopBtn>
+      </div>
+
+    );
+  }
 }
 
 export default App;
