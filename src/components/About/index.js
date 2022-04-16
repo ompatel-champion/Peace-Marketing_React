@@ -6,7 +6,7 @@ import akiraProfileImg from "../../assets/imgs/persons/Akira-photo-70-70.jpg";
 import gustavoProfileImg from "../../assets/imgs/persons/Gustavo-photo-70-70.jpeg";
 import pascualProfileImg from "../../assets/imgs/persons/PascualG-photo-70-70.jpg";
 
-class HomeTeam extends Component {
+class About extends Component {
     render() {
         const settings = {
             dots: true,
@@ -180,4 +180,4 @@ class HomeTeam extends Component {
     }
 }
 
-export default HomeTeam;
+export default About;

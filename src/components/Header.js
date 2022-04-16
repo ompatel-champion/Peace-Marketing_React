@@ -3,6 +3,8 @@ import { Component } from 'react';
 import './Header.css';
 import siteLogo from '../assets/imgs/Logo-White.png';
 import { send } from 'emailjs-com';
+import AppRoute from '../app/route';
+import { Link } from "react-router-dom";
 
 class Header extends Component {
     constructor(props) {
@@ -87,6 +89,13 @@ class Header extends Component {
             alignItems: "center"
         }
 
+        const menuUrl = {
+            home: "/",
+            about: "/about",
+            info: "/info",
+            contact: "/contact",
+        }
+
         return (
             <header>
                 <nav role="navigation">
@@ -96,11 +105,18 @@ class Header extends Component {
                         <span></span>
                         <span></span>
                         <ul id="menu">
-                            <a href={testUrl}><li className="active">Home</li></a>
-                            <a href={testUrl}><li>About</li></a>
-                            <a href={testUrl}><li>Info</li></a>
-                            <a href={testUrl}><li>Contact</li></a>
-                            <a href={testUrl} target="_blank" rel="noreferrer"><li>Show me more</li></a>
+                            <li className="active">
+                                <Link to={menuUrl.home}>Home</Link>
+                            </li>
+                            <li>
+                                <Link to={menuUrl.about}>About</Link>
+                            </li>
+                            <li>
+                                <Link to={menuUrl.info}>Info</Link>
+                            </li>
+                            <li>
+                                <Link to={menuUrl.contact}>Contact</Link>
+                            </li>
 
                             <div id="menu-bottom">
                                 <form id="menu-form" className="pt-5 pb-5" onSubmit={this.submitEmail.bind(this)} method="POST">

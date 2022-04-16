@@ -1,15 +1,9 @@
 import './App.css';
 import Header from './components/Header';
-import HomeBanner from './components/HomeLayouts/HomeBanner';
-import HomeWhatWeDo from './components/HomeLayouts/HomeWhatWeDo';
-import HomeSuccess from './components/HomeLayouts/HomeSuccess';
-import HomeTeam from './components/HomeLayouts/HomeTeam';
-import HomePeopleTalk from './components/HomeLayouts/HomePeopleTalk';
-import HomeProjects from "./components/HomeLayouts/HomeProjects";
-import HomeSubscribe from './components/HomeLayouts/HomeSubscribe';
 import Footer from './components/Footer';
 import { Component } from 'react';
 import ScrollTopBtn from './components/ScrollTopBtn';
+import AppRoute from './app/route';
 
 class App extends Component {
   render() {
@@ -18,33 +12,13 @@ class App extends Component {
         <Header>
         </Header>
 
-        <HomeBanner>
-        </HomeBanner>
-
-        <HomeWhatWeDo>
-        </HomeWhatWeDo>
-
-        <HomeSuccess>
-        </HomeSuccess>
-
-        <HomeTeam>
-        </HomeTeam>
-
-        <HomePeopleTalk>
-        </HomePeopleTalk>
-
-        <HomeProjects>
-        </HomeProjects>
-
-        <HomeSubscribe>
-        </HomeSubscribe>
+        <AppRoute {...this.props} />
 
         <Footer>
         </Footer>
 
         <ScrollTopBtn></ScrollTopBtn>
       </div>
-
     );
   }
 }
