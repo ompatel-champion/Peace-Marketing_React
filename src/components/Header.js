@@ -12,11 +12,17 @@ class Header extends Component {
             name: '',
             email: '',
             subject: '',
-            message: ''
+            message: '',
+            hide: false
         };
     }
     state = {
-        subscribeRes: ''
+        subscribeRes: '',
+    }
+
+    menuHide() {
+        this.setState({ hide: true });
+        alert(this.state.hide);
     }
     onNameChange(event) {
         this.setState({ name: event.target.value })
@@ -90,7 +96,6 @@ class Header extends Component {
         const menuUrl = {
             home: "/",
             about: "/about",
-            info: "/info",
             contact: "/contact",
         }
 
@@ -104,16 +109,13 @@ class Header extends Component {
                         <span></span>
                         <ul id="menu">
                             <li className="active">
-                                <Link to={menuUrl.home}>Home</Link>
+                                <Link to={menuUrl.home} onClick={this.menuHide.bind()}>Home</Link>
                             </li>
                             <li>
-                                <Link to={menuUrl.about}>About</Link>
+                                <Link to={menuUrl.about} onClick={this.menuHide.bind()}>About</Link>
                             </li>
                             <li>
-                                <Link to={menuUrl.info}>Info</Link>
-                            </li>
-                            <li>
-                                <Link to={menuUrl.contact}>Contact</Link>
+                                <Link to={menuUrl.contact} onClick={this.menuHide.bind()}>Contact</Link>
                             </li>
 
                             <div id="menu-bottom">
@@ -133,22 +135,17 @@ class Header extends Component {
                                 </form>
                                 <ul className="nav col-lg-auto my-2 justify-content-center my-md-0 text-small">
                                     <li>
-                                        <a href="https://www.facebook.com/peace-marketingau" className="nav-link text-white">
+                                        <a href="https://www.facebook.com/dragon.soft.star.forest/" className="nav-link text-white" target={"_blank"}>
                                             <i className="fab fa-facebook-f"></i>
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="https://www.twitter.com/peacemarketing" className="nav-link text-white">
-                                            <i className="fab fa-twitter"></i>
+                                        <a href="skype:silverstar710rich?chat" className="nav-link text-white" target={"_blank"}>
+                                            <i className="fab fa-skype"></i>
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="https://www.instagram.com/peacemarketing" className="nav-link text-white">
-                                            <i className="fab fa-twitter"></i>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="https://www.linkedin.com/peacemarketing" className="nav-link text-white">
+                                        <a href="https://www.linkedin.com/in/jacob-davidson-73a7a7223/" className="nav-link text-white" target={"_blank"}>
                                             <i className="fab fa-linkedin"></i>
                                         </a>
                                     </li>
@@ -168,22 +165,17 @@ class Header extends Component {
                             <div style={{ width: "fit-content" }}>
                                 <ul className="nav col-lg-auto my-2 justify-content-center my-md-0 text-small">
                                     <li>
-                                        <a href="https://www.facebook.com/peace-marketingau" className="nav-link text-white">
+                                        <a href="https://www.facebook.com/dragon.soft.star.forest/" className="nav-link text-white" target={"_blank"}>
                                             <i className="fab fa-facebook-f"></i>
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="https://www.twitter.com/peacemarketing" className="nav-link text-white">
-                                            <i className="fab fa-twitter"></i>
+                                        <a href="skype:silverstar710rich?chat" className="nav-link text-white" target={"_blank"}>
+                                            <i className="fab fa-skype"></i>
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="https://www.instagram.com/peacemarketing" className="nav-link text-white">
-                                            <i className="fab fa-twitter"></i>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="https://www.linkedin.com/peacemarketing" className="nav-link text-white">
+                                        <a href="https://www.linkedin.com/in/jacob-davidson-73a7a7223/" className="nav-link text-white" target={"_blank"}>
                                             <i className="fab fa-linkedin"></i>
                                         </a>
                                     </li>
