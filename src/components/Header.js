@@ -3,7 +3,6 @@ import { Component } from 'react';
 import './Header.css';
 import siteLogo from '../assets/imgs/Logo-White.png';
 import { send } from 'emailjs-com';
-import AppRoute from '../app/route';
 import { Link } from "react-router-dom";
 
 class Header extends Component {
@@ -76,7 +75,6 @@ class Header extends Component {
     }
 
     render() {
-        let testUrl = '/test';
         const smallFont = {
             fontSize: "12px",
             backgroundColor: "transparent",
