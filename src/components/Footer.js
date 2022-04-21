@@ -10,7 +10,8 @@ class Footer extends Component {
             marginBottom: "0px"
         }
         const footerLogoStyle = {
-            maxWidth: "64px"
+            maxWidth: "64px",
+            float: "right"
         }
         const footerSeperatorStyle = {
             color: "white"
@@ -24,8 +25,8 @@ class Footer extends Component {
             <footer id="footer" className="bg-black pt-5 pb-5">
                 <div className="container">
                     <div className="row align-items-center">
-                        <div className="col-md-8 col-sm-6 col-6">
-                            <ul style={navStyle}>
+                        <div className="col-md-8 col-sm-6 col-6 px-0">
+                            <ul style={navStyle} className="px-0">
                                 <li>
                                     <a href="https://peace-marketing.com" aria-current="page" className="text-white active">
                                         Home
@@ -53,7 +54,7 @@ class Footer extends Component {
                                 </li>
                             </ul>
                         </div>
-                        <div className="col-md-4 col-sm-6 col-6 text-center">
+                        <div className="col-md-4 col-sm-6 col-6">
                             <img src={siteLogo} style={footerLogoStyle} alt="Peace Marketing Website Development Team" />
                         </div>
                     </div>
