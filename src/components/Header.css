@@ -9,6 +9,7 @@ header {
     background-color: #000000cc;
     padding: 10px 20px;
     height: 120px;
+    border-bottom: solid 2px #ffffffcc;
 }
 header > h1, header > p {
     display: none;

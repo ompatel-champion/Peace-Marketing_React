@@ -201,12 +201,12 @@ class Header extends Component {
                         </ul>
                     </div>
                 </nav>
-                <Row justify="center" align="top" className='container'>
-                    <Col {...span} className="app">
+                <Row justify="space-between" align="top" className='container'>
+                    <Col span={24} className="app">
                         <Row>
                             <Col className="header" span={24}>
                                 <Row justify="space-around" align="middle">
-                                    <Col span={4}>
+                                    <Col span={6}>
                                         <Link to="/">
                                             <img
                                                 src={siteLogo}
@@ -215,10 +215,10 @@ class Header extends Component {
                                             />
                                         </Link>
                                     </Col>
-                                    <Col span={16}>
-                                        <Row>
+                                    <Col span={12}>
+                                        <Row justify="center">
                                             <Col className="main_menu" span={24}>
-                                                <Menu onClick={handleClick} mode="horizontal">
+                                                <Menu onClick={handleClick} mode="horizontal" style={{ backgroundColor: "transparent", textAlign: "center", borderBottom: "none", justifyContent: "center" }}>
                                                     {menus.map((item) => {
                                                         if (item.submenu) {
                                                             return (
@@ -226,6 +226,7 @@ class Header extends Component {
                                                                     className="main_menu_item"
                                                                     key={item.key}
                                                                     title={item.title}
+                                                                    style={{ backgroundColor: "transparent" }}
                                                                 >
                                                                     {item.submenu.map((sub) => {
                                                                         if (sub.link.startsWith("https")) {
@@ -257,7 +258,7 @@ class Header extends Component {
                                             </Col>
                                         </Row>
                                     </Col>
-                                    <Col span={4}>
+                                    <Col span={6}>
                                         <ul className="nav col-lg-auto my-2 justify-content-center my-md-0 text-small">
                                             <li>
                                                 <a href="https://www.facebook.com/dragon.soft.star.forest/" className="nav-link text-white" target={"_blank"}>

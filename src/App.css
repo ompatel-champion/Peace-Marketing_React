@@ -43,6 +43,11 @@ section {
     max-height: 100px;
     width: auto;
 }
+.header .main_menu .main_menu_item * {
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: bold;
+}
 .social-icons {
     font-size: 20px;
 }
