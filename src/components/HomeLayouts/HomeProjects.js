@@ -18,30 +18,30 @@ class HomeProjects extends Component {
             slidesToScroll: 1,
             responsive: [
                 {
-                  breakpoint: 1024,
-                  settings: {
-                    slidesToShow: 2,
-                    slidesToScroll: 1,
-                    infinite: true,
-                    dots: true
-                  }
+                    breakpoint: 1024,
+                    settings: {
+                        slidesToShow: 2,
+                        slidesToScroll: 1,
+                        infinite: true,
+                        dots: true
+                    }
                 },
                 {
-                  breakpoint: 600,
-                  settings: {
-                    slidesToShow: 1,
-                    slidesToScroll: 1,
-                    initialSlide: 1
-                  }
+                    breakpoint: 600,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1,
+                        initialSlide: 1
+                    }
                 },
                 {
-                  breakpoint: 480,
-                  settings: {
-                    slidesToShow: 1,
-                    slidesToScroll: 1
-                  }
+                    breakpoint: 480,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1
+                    }
                 }
-              ]
+            ]
         };
 
         const imgStyle = {
@@ -52,7 +52,7 @@ class HomeProjects extends Component {
         }
 
         return (
-            <section id="home-projects" className="pt-5 pb-5 bg-dark">
+            <section id="home-projects" className="pt-5 pb-5">
                 <div className="container">
                     <div className="row">
                         <h2 className="text-white">

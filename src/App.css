@@ -35,6 +35,10 @@ section {
     padding: 8px 22px;
     border-radius: 4px;
 }
+.gray-border {
+    border: solid #6a757d 2px;
+    border-radius: 4px;
+}
 .header-logo {
     max-height: 100px;
     width: auto;
@@ -84,6 +88,7 @@ section {
     cursor: pointer;
     padding: 20px;
     height: 100%;
+    margin: 0 20px;
 }
 .testimonial-div {
     cursor: pointer;
@@ -92,10 +97,10 @@ section {
     background-color: #00000035;
 }
 .testimonial-div:hover {
-    background-color: #f9e54c;
+    background-color: #f9e54c !important;
 }
 .testimonial-div:hover * {
-    color: #6C757D;
+    color: #6C757D !important;
 }
 .slick-dots li button:before {
     font-size: 16px;
@@ -166,7 +171,6 @@ footer .social-icons i {
     font-weight: 400;
 }
 .slick-slider {
-    width: calc(100% - 80px);
     margin: auto;
 }
 section {

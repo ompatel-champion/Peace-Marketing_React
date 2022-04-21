@@ -66,7 +66,7 @@ class HomeTeam extends Component {
         }
 
         return (
-            <section id="home-team" className="pt-5 pb-5 bg-dark">
+            <section id="home-team" className="pt-5 pb-5">
                 <div className="container">
                     <div className="row">
                         <h2 className="text-white">
@@ -80,7 +80,7 @@ class HomeTeam extends Component {
                     <div className="row pt-1 pb-1 mw-90 align">
                         <Slider {...settings}>
                             <div className="text-white">
-                                <div className="team-person-div hover-shadow">
+                                <div className="team-person-div hover-shadow gray-border">
                                     <div className="row align-items-center pb-2">
                                         <div className="col col-md-3 col-sm-4 col-4">
                                             <img src={jacobProfileImg} style={personImgStyle} alt="IT SEO Jacob Davidson"></img>
@@ -111,7 +111,7 @@ class HomeTeam extends Component {
                                 </div>
                             </div>
                             <div className="text-white">
-                                <div className="team-person-div hover-shadow">
+                                <div className="team-person-div hover-shadow gray-border">
                                     <div className="row align-items-center pb-2">
                                         <div className="col col-md-3 col-sm-4 col-4">
                                             <img src={gustavoProfileImg} style={personImgStyle} alt="Website Programmer Akira Sato"></img>
@@ -142,7 +142,7 @@ class HomeTeam extends Component {
                                 </div>
                             </div>
                             <div className="text-white">
-                                <div className="team-person-div hover-shadow">
+                                <div className="team-person-div hover-shadow  gray-border">
                                     <div className="row align-items-center pb-2">
                                         <div className="col col-md-3 col-sm-4 col-4">
                                             <img src={pascualProfileImg} style={personImgStyle} alt="Website Developer Pascual Garcia Congrains"></img>

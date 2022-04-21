@@ -5,16 +5,16 @@ import howWeHelpIco from "../../assets/imgs/icons/how-we-help-icon.png";
 class HomeSuccess extends Component {
     onLoadLetterAnimation() {
         let i = 0
-        setInterval(function(){
+        setInterval(function () {
             let elements = document.getElementsByClassName('letter-anim');
             for (let j = 0; j < elements.length; j++) {
-                if (j*1 === i*1) {
+                if (j * 1 === i * 1) {
                     elements[j].style.display = "inline";
                 } else {
                     elements[j].style.display = "none";
                 }
             }
-            
+
             i += 1;
             if (i > 2) {
                 i = 0;
@@ -28,8 +28,8 @@ class HomeSuccess extends Component {
         }
         let howWeHelpLink = "/#";
 
-        return(
-            <section id="home-success" className="pt-5 pb-5 bg-secondary">
+        return (
+            <section id="home-success" className="pt-5 pb-5">
                 <div className="container">
                     <div className="row">
                         <div className="col col-md-6 col-sm-12 col-12">
@@ -65,7 +65,7 @@ class HomeSuccess extends Component {
                                 </span>
                             </h2>
                             <p className="text-white pb-3">
-                                Our approach to all projects is to achieve the best outcomes for our clients. We put your end consumer at the heart of all we do. 
+                                Our approach to all projects is to achieve the best outcomes for our clients. We put your end consumer at the heart of all we do.
                             </p>
 
                             <a href={howWeHelpLink} className="main-btn">

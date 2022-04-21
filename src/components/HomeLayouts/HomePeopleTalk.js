@@ -16,8 +16,8 @@ class HomePeopleTalk extends Component {
             fontSize: "14px",
             marginBottom: "0px"
         }
-        return(
-            <section id="home-people-talk" className="pb-5 pt-5 bg-secondary">
+        return (
+            <section id="home-people-talk" className="pb-5 pt-5">
                 <div className="container">
                     <div className="row">
                         <h2 className="text-white">PEOPLE TALK</h2>
@@ -28,7 +28,7 @@ class HomePeopleTalk extends Component {
 
                     <div className="row pt-1 pb-1 align">
                         <div className="col col-lg-4 col-md-6 col-sm-12 col-12">
-                            <div className="testimonial-div text-center text-white">
+                            <div className="testimonial-div text-center text-white bg-secondary">
                                 <p style={quoteStyle}><i className="fa fa-quote-right" aria-hidden="true"></i></p>
                                 <p>
                                     Peace Marketing was able to optimise my efforts across social and search - which lowered our Cost per Acquisition. We have seen a considerable increase in participation across all of our services.
@@ -44,7 +44,7 @@ class HomePeopleTalk extends Component {
                             </div>
                         </div>
                         <div className="col col-lg-4 col-md-6 col-sm-12 col-12">
-                            <div className="testimonial-div text-center text-white">
+                            <div className="testimonial-div text-center text-white bg-secondary">
                                 <p style={quoteStyle}><i className="fa fa-quote-right" aria-hidden="true"></i></p>
                                 <p>
                                     Peace Marketing helped me launch my business from 0 to 100. After forming an in-depth and insightful strategy for me to work off to then helping me launch my website they have gone above and beyond. Whilst it is still early days - we will be calling upon Peace Marketing to assist in other areas as we grow.
@@ -60,7 +60,7 @@ class HomePeopleTalk extends Component {
                             </div>
                         </div>
                         <div className="col col-lg-4 col-md-6 col-sm-12 col-12">
-                            <div className="testimonial-div text-center text-white">
+                            <div className="testimonial-div text-center text-white bg-secondary">
                                 <p style={quoteStyle}><i className="fa fa-quote-right" aria-hidden="true"></i></p>
                                 <p>
                                     After getting some poor results utilising Facebook Ads - we approached Peace Marketing to help with optimising our ads. Since, we have had a 60% drop in cost per acquisition and have been able to invest back into our business.
@@ -71,7 +71,7 @@ class HomePeopleTalk extends Component {
                                     Founder ROK Bracelets
                                 </p>
                                 <p style={smallP}>
-                                    
+
                                 </p>
                             </div>
                         </div>
