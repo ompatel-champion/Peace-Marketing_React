@@ -1,5 +1,6 @@
 import { Component } from "react";
 import Particles from "react-tsparticles";
+import bannerLogo from '../../assets/imgs/icons/banner-logo.png';
 
 class HomeBanner extends Component {
     render() {
@@ -12,8 +13,7 @@ class HomeBanner extends Component {
             height: "6px"
         };
         const arrowADownStyle = {
-            textAlign: "center",
-            paddingRight: "35%"
+            paddingLeft: "5%"
         };
         const arrowDownStyle = {
             color: "#f9e54c",
@@ -23,7 +23,7 @@ class HomeBanner extends Component {
         let arrowDownUrl = "/#home-what-we-do";
 
         return (
-            <section id='home-banner' className="row g-0 vh-100 align-items-center">
+            <section id='home-banner' className="g-0 align-items-center">
                 <div className="background-overlay">
                     <Particles
                         params={{
@@ -98,24 +98,31 @@ class HomeBanner extends Component {
                         }}
                     />
                 </div>
-                <div className="container z-1">
-                    <div className="row g-0">
-                        <div className="col">
-                            <h1 className="text-white text-center">Digital transformation for your brand</h1>
+                <div className="container z-1" style={{ position: 'inherit' }}>
+                    <div className="row m-auto g-0">
+                        <div className="col col-lg-6 col-md-6 col-sm-12 col-12">
+                            <div className="row g-0">
+                                <div className="col">
+                                    <h1 className="text-white">Thoughts that make sense</h1>
+                                </div>
+                            </div>
+                            <div style={subTitleStyle} className="row align-items-center">
+                                <div className="col col-lg-3 col-md-3 col-sm-12 col-12">
+                                    <div style={lineStyle} className="m-auto"></div>
+                                </div>
+                                <div className="col col-lg-9 col-md-9 col-sm-12 col-12">
+                                    <h5 className="text-white">We try best, and we make sure we deliver best</h5>
+                                </div>
+                            </div>
+                            <div className="row g-0">
+                                <a href={arrowDownUrl} style={arrowADownStyle}>
+                                    <i style={arrowDownStyle} className="fa fa-angle-down"></i>
+                                </a>
+                            </div>
                         </div>
-                    </div>
-                    <div style={subTitleStyle} className="row m-auto align-items-center">
-                        <div className="col col-lg-3 col-md-3 col-sm-12 col-12">
-                            <div style={lineStyle} className="m-auto"></div>
+                        <div className="col col-lg-6 col-md-6 col-sm-12 col-12 d-flex justify-content-end">
+                            <img src={bannerLogo} style={{ width: "70%", maxWidth: "320px" }} />
                         </div>
-                        <div className="col col-lg-9 col-md-9 col-sm-12 col-12">
-                            <h5 className="text-white">At Peace Marketing we provide your business with strategic, data-driven, creative marketing advice to succeed in a digital landscape.</h5>
-                        </div>
-                    </div>
-                    <div className="row g-0">
-                        <a href={arrowDownUrl} style={arrowADownStyle}>
-                            <i style={arrowDownStyle} className="fa fa-angle-down"></i>
-                        </a>
                     </div>
                 </div>
             </section>

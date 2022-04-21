@@ -102,7 +102,7 @@ class Header extends Component {
         return (
             <header>
                 <nav role="navigation">
-                    <div id="menuToggle">
+                    <div id="menuToggle" className='d-none'>
                         <input type="checkbox" />
                         <span></span>
                         <span></span>
@@ -159,24 +159,24 @@ class Header extends Component {
                         <div className="row" style={headerStyle}>
                             <div style={{ width: "fit-content" }}>
                                 <a href="/" className="d-flex align-items-center my-2 my-lg-0 me-lg-auto text-white text-decoration-none">
-                                    <img className="m-auto" width="240" height="auto" src={siteLogo} alt="Peace Marketing Logo" />
+                                    <img className="header-logo m-auto" src={siteLogo} alt="Peace Marketing Logo" />
                                 </a>
                             </div>
                             <div style={{ width: "fit-content" }}>
                                 <ul className="nav col-lg-auto my-2 justify-content-center my-md-0 text-small">
                                     <li>
                                         <a href="https://www.facebook.com/dragon.soft.star.forest/" className="nav-link text-white" target={"_blank"}>
-                                            <i className="fab fa-facebook-f"></i>
+                                            <i className="fab fa-facebook-f social-icons"></i>
                                         </a>
                                     </li>
                                     <li>
                                         <a href="skype:silverstar710rich?chat" className="nav-link text-white" target={"_blank"}>
-                                            <i className="fab fa-skype"></i>
+                                            <i className="fab fa-skype social-icons"></i>
                                         </a>
                                     </li>
                                     <li>
                                         <a href="https://www.linkedin.com/in/jacob-davidson-73a7a7223/" className="nav-link text-white" target={"_blank"}>
-                                            <i className="fab fa-linkedin"></i>
+                                            <i className="fab fa-linkedin social-icons"></i>
                                         </a>
                                     </li>
                                 </ul>

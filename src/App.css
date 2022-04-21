@@ -26,9 +26,28 @@ h1 {
 @media (min-width: 1200px) {  
   h1 {font-size:3.5rem;} /*1rem = 16px*/    
 }
+section {
+    background-color: #000000;
+}
+.ps-btn {
+    background-color: #f9e54c;
+    color: black;
+    padding: 8px 22px;
+    border-radius: 4px;
+}
+.header-logo {
+    max-height: 100px;
+    width: auto;
+}
+.social-icons {
+    font-size: 20px;
+}
+#home-banner {
+    padding-top: 300px;
+    padding-bottom: 200px;
+}
 #home-banner .background-overlay {
-    background-color: rgba(0,0,0,.95);
-    opacity: .9;
+    background-color: #000000;
     transition: background 0.3s,border-radius 0.3s,opacity 0.3s;
     position: absolute;
     width: 100%;
