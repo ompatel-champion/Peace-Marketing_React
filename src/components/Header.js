@@ -98,6 +98,40 @@ class Header extends Component {
             about: "/about",
             contact: "/contact",
         }
+        const menus = [
+            {
+                link: "/",
+                title: "Home",
+                key: "home",
+            },
+            {
+                link: "/about",
+                title: "About",
+                key: "about",
+            },
+            {
+                link: "archives/index",
+                key: "archives",
+                title: "Archives",
+                submenu: [
+                    {
+                        link: "archives/video_archives",
+                        title: "Video Archives",
+                        key: "video_archives",
+                    },
+                    {
+                        link: "archives/printed_archives",
+                        title: "Printed Archives",
+                        key: "printed_archives",
+                    },
+                ],
+            },
+            {
+                link: "/contact",
+                key: "contact",
+                title: "Contact Us",
+            },
+        ];
 
         return (
             <header>
@@ -161,6 +195,19 @@ class Header extends Component {
                                 <a href="/" className="d-flex align-items-center my-2 my-lg-0 me-lg-auto text-white text-decoration-none">
                                     <img className="header-logo m-auto" src={siteLogo} alt="Peace Marketing Logo" />
                                 </a>
+                            </div>
+                            <div style={{ width: "fit-content" }}>
+                                <ul id="top-menu">
+                                    <li className="active">
+                                        <Link to={menuUrl.home} onClick={this.menuHide.bind()}>Home</Link>
+                                    </li>
+                                    <li>
+                                        <Link to={menuUrl.about} onClick={this.menuHide.bind()}>About</Link>
+                                    </li>
+                                    <li>
+                                        <Link to={menuUrl.contact} onClick={this.menuHide.bind()}>Contact</Link>
+                                    </li>
+                                </ul>
                             </div>
                             <div style={{ width: "fit-content" }}>
                                 <ul className="nav col-lg-auto my-2 justify-content-center my-md-0 text-small">
