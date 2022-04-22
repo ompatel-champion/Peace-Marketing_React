@@ -9,10 +9,15 @@ module.exports = {
                     lessOptions: {
                         modifyVars: {
                             '@primary-color': '#f9e54c', // primary color for all components
-                            '@secondary-color': "#ffffff",
+                            '@secondary-text-color': "#ffffff",
                             '@background-color': "#00000000", // link color
                             '@link-color': "#f9e54c",
                             '@text-color': "#ffffff", // major text color
+                            '@input-background-color': "#00000000",
+                            '@input-border-color': "#000000",
+                            '@button-background-color': '#f9e54c',
+                            '@button-text-color': '#ffffff',
+                            '@label-color': "#ffffff"
 
 
                             // '@success-color': "#52c41a", // success state color

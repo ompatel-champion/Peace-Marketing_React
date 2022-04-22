@@ -1,13 +1,12 @@
-import { Component } from "react";
 import Particles from "react-tsparticles";
 import { Row, Col, Form, Input, InputNumber, Button } from "antd";
 
 const layout = {
     labelCol: {
-        span: 8,
+        span: 24,
     },
     wrapperCol: {
-        span: 16,
+        span: 24,
     },
 };
 const validateMessages = {
@@ -116,7 +115,7 @@ export default function Contact() {
                             <Row>
                                 <Col {...span}>
                                     <h3 className="text-white">What happens next?</h3>
-                                    <ul class="ps-contact__text-list">
+                                    <ul className="ps-contact__text-list">
                                         <li>
                                             We’ll contact you within three business days of receiving your submission and schedule a free video call to get to know each other and learn your requirements.
                                         </li>
@@ -130,7 +129,9 @@ export default function Contact() {
                                     </ul>
                                 </Col>
                                 <Col {...span}>
-                                    <Form {...layout} name="nest-messages" onFinish={onFinish} validateMessages={validateMessages}>
+                                    <Form {...layout} name="nest-messages" onFinish={onFinish} validateMessages={validateMessages} style={{ maxWidth: "480px", width: "90%", margin: "auto" }}>
+                                        <h3 className="text-white">Schedule a free consultation</h3>
+                                        <p>Initial meetings with people like you are the highlights of our day. Love to hear about ideas and how we can help make them real!</p>
                                         <Form.Item
                                             name={['user', 'name']}
                                             label="Name"
@@ -140,7 +141,7 @@ export default function Contact() {
                                                 },
                                             ]}
                                         >
-                                            <Input />
+                                            <Input style={{ backgroundColor: "#00000000", borderColor: "#ffffff" }} />
                                         </Form.Item>
                                         <Form.Item
                                             name={['user', 'email']}
@@ -148,32 +149,28 @@ export default function Contact() {
                                             rules={[
                                                 {
                                                     type: 'email',
+                                                    required: true
                                                 },
                                             ]}
                                         >
-                                            <Input />
+                                            <Input style={{ backgroundColor: "#00000000", borderColor: "#ffffff" }} />
                                         </Form.Item>
                                         <Form.Item
-                                            name={['user', 'age']}
-                                            label="Age"
+                                            name={['user', 'phone']}
+                                            label="Phone Number"
                                             rules={[
                                                 {
                                                     type: 'number',
-                                                    min: 0,
-                                                    max: 99,
                                                 },
                                             ]}
                                         >
-                                            <InputNumber />
+                                            <InputNumber style={{ backgroundColor: "#00000000", borderColor: "#ffffff", width: "100%" }} />
                                         </Form.Item>
-                                        <Form.Item name={['user', 'website']} label="Website">
-                                            <Input />
+                                        <Form.Item name={['user', 'description']} label="Description">
+                                            <Input.TextArea rows={5} style={{ backgroundColor: "#00000000", borderColor: "#ffffff" }} />
                                         </Form.Item>
-                                        <Form.Item name={['user', 'introduction']} label="Introduction">
-                                            <Input.TextArea />
-                                        </Form.Item>
-                                        <Form.Item wrapperCol={{ ...layout.wrapperCol, offset: 8 }}>
-                                            <Button type="primary" htmlType="submit">
+                                        <Form.Item>
+                                            <Button htmlType="submit" style={{ backgroundColor: "#f9e54c", color: "#000", width: "100%" }}>
                                                 Submit
                                             </Button>
                                         </Form.Item>

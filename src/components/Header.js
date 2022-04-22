@@ -110,7 +110,7 @@ class Header extends Component {
             },
             {
                 link: "/about",
-                title: "About",
+                title: "About Us",
                 key: "about",
             },
             {

@@ -1,4 +1,3 @@
-import { Component } from "react";
 import Slider from "react-slick";
 
 import jacobProfileImg from "../../assets/imgs/persons/JacobD-photo-70-70.jpg";
