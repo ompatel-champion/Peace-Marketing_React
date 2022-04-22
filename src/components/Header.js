@@ -226,17 +226,16 @@ class Header extends Component {
                                                                     className="main_menu_item"
                                                                     key={item.key}
                                                                     title={item.title}
-                                                                    style={{ backgroundColor: "transparent" }}
                                                                 >
                                                                     {item.submenu.map((sub) => {
                                                                         if (sub.link.startsWith("https")) {
                                                                             return (
-                                                                                <Menu.Item className="main_menu_item" key={sub.key}>
+                                                                                <Menu.Item style={{ backgroundColor: "transparent" }} className="main_menu_item" key={sub.key}>
                                                                                     <a href={sub.link}>{sub.title}</a>
                                                                                 </Menu.Item>)
                                                                         } else {
                                                                             return (
-                                                                                <Menu.Item className="main_menu_item" key={sub.key}>
+                                                                                <Menu.Item style={{ backgroundColor: "transparent" }} className="main_menu_item" key={sub.key}>
                                                                                     <Link to={sub.link}>{sub.title}</Link>
                                                                                 </Menu.Item>
                                                                             )

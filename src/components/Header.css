@@ -24,7 +24,11 @@ header > h1, header > p {
    user-select: none;
    width: fit-content;
 }
- 
+.ant-menu-submenu .ant-menu-vertical {
+   background-color: #000000;
+   border: solid #6a757d 2px;
+   border-radius: 4px;
+}
 #menuToggle a {
    text-decoration: none;
    color: #fff;   
@@ -36,7 +40,14 @@ header > h1, header > p {
 #menuToggle a:hover {
    color: #f9e54c;
 }
-  
+.slick-dots li button:before {
+   color: #fff;
+   opacity: 1;
+}
+.slick-dots li.slick-active button:before {
+   color: #f9e54c;
+   opacity: 1;
+}
 #menuToggle input {
    display: block;
    width: 40px;
