@@ -1,4 +1,4 @@
-import './App.css';
+import './App.less';
 import Header from './components/Header';
 import Footer from './components/Footer';
 import { Component } from 'react';
