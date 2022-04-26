@@ -1,9 +1,10 @@
-import React, { useRef } from 'react';
+import React, { useRef, useState } from 'react';
 import emailjs from 'emailjs-com';
 import { Form, Input, InputNumber, Button, Result } from "antd";
 
 export const ContactForm = () => {
     const form = useRef();
+    const [subscribeRes, setSubscribeRes] = useState('');
 
     const layout = {
         labelCol: {
@@ -24,12 +25,10 @@ export const ContactForm = () => {
             )
             .then(
                 (result) => {
-                    console.log(result.text);
-                    alert("Success!");
+                    setSubscribeRes('Email sent successfully!');
                 },
                 (error) => {
-                    console.log(error.text);
-                    alert("Failed...", error);
+                    setSubscribeRes('FAILED...' + error);
                 }
             );
     };
@@ -90,6 +89,7 @@ export const ContactForm = () => {
                     Submit
                 </Button>
             </Form.Item>
+            <p className="mt-3 text-white text-center">{subscribeRes}</p>
         </Form>
     );
 };
