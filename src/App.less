@@ -138,6 +138,7 @@ section {
     padding: 20px;
     height: 100%;
     margin: 0 20px;
+    display: block;
 }
 
 .testimonial-div {
@@ -155,7 +156,13 @@ section {
     }
 }
 
+.ant-carousel .slick-dots li button {
+    height: 0px;
+}
+
 .slick-dots {
+    width: auto;
+
     li {
         button {
             &:before {
@@ -257,6 +264,17 @@ footer {
                 }
             }
         }
+    }
+}
+
+.ant-collapse-item {
+    * {
+        background-color: #00000000 !important;
+        color: #ffffff !important;
+    }
+
+    .ant-collapse-header {
+        font-weight: bold;
     }
 }
 

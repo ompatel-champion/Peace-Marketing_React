@@ -17,7 +17,9 @@ module.exports = {
                             '@input-border-color': "#000000",
                             '@button-background-color': '#f9e54c',
                             '@button-text-color': '#ffffff',
-                            '@label-color': "#ffffff"
+                            '@label-color': "#ffffff",
+                            '@div-color': "#ffffff",
+                            '@div-background-color': "#00000000"
 
 
                             // '@success-color': "#52c41a", // success state color

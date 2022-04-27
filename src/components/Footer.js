@@ -64,7 +64,7 @@ class Footer extends Component {
                     <div className="row ">
                         <div className="col-md-8">
                             <p id="footer-bottom-txt" className="text-white small">
-                                © 2019 All rights Reserved. Design by Peace Marketing
+                                © 2019 All rights Reserved. Design by Perfect Solution.
                             </p>
                         </div>
                         <div className="col-md-4">

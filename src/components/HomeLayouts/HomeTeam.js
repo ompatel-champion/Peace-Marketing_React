@@ -80,13 +80,13 @@ class HomeTeam extends Component {
                     <div className="row pt-1 pb-1 mw-90 align">
                         <Slider {...settings}>
                             <div className="text-white">
-                                <div className="team-person-div hover-shadow gray-border">
+                                <a href="/teams/jacobd" className="team-person-div hover-shadow gray-border">
                                     <div className="row align-items-center pb-2">
                                         <div className="col col-md-3 col-sm-4 col-4">
                                             <img src={jacobProfileImg} style={personImgStyle} alt="IT SEO Jacob Davidson"></img>
                                         </div>
                                         <div className="col col-md-9 col-sm-8 col-8">
-                                            <strong>Jacob Davidson</strong>
+                                            <strong className="text-white">Jacob Davidson</strong>
                                         </div>
                                     </div>
                                     <div className="row pt-3">
@@ -94,21 +94,21 @@ class HomeTeam extends Component {
                                     </div>
                                     <div className="row">
                                         <p style={summaryStyle}>Summary</p>
-                                        <p>
-                                            Through Jacob's work with startups at TechFarms and TechFarms Capital, he saw the critical...
+                                        <p className="text-white">
+                                            Founder of multiple successful tech companies – focused on solving big industry problems with innovation...
                                         </p>
                                     </div>
                                     <div className="row">
                                         <div className="w-50">
                                             <p style={styleOne}>Experience</p>
-                                            <p><span style={styleTwo}>15+</span> years</p>
+                                            <p><span style={styleTwo}>15+</span> <span className="text-white">years</span></p>
                                         </div>
                                         <div className="w-50">
                                             <p style={styleOne}>Projects</p>
                                             <p><span style={styleTwo}>∞</span></p>
                                         </div>
                                     </div>
-                                </div>
+                                </a>
                             </div>
                             <div className="text-white">
                                 <div className="team-person-div hover-shadow gray-border">
@@ -125,14 +125,14 @@ class HomeTeam extends Component {
                                     </div>
                                     <div className="row">
                                         <p style={summaryStyle}>Summary</p>
-                                        <p>
+                                        <p className="text-white">
                                             Through Jacob's work with startups at TechFarms and TechFarms Capital, he saw the critical...
                                         </p>
                                     </div>
                                     <div className="row">
                                         <div className="w-50">
                                             <p style={styleOne}>Experience</p>
-                                            <p><span style={styleTwo}>15+</span> years</p>
+                                            <p><span style={styleTwo}>15+</span> <span className="text-white">years</span></p>
                                         </div>
                                         <div className="w-50">
                                             <p style={styleOne}>Projects</p>
