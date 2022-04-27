@@ -125,7 +125,7 @@ export default function JacobD() {
                         </Col>
                     </div>
                 </Row>
-                <Row className="container mt-5">
+                <Row className="container my-5">
                     <div className="w-100">
                         <h4 className="text-white">Education</h4>
                         <Space type="panel" direction="vertical" className="w-100">
@@ -140,11 +140,14 @@ export default function JacobD() {
                                 </Panel>
                             </Collapse>
                         </Space>
-
                         <hr className="text-white w-100" />
+                    </div>
+                </Row>
+                <Row className="container my-5">
+                    <div className="w-100">
                         <h4 className="text-white">Work History</h4>
                         <Carousel autoplay>
-                            <div style={{ backgroundColor: "transparent" }}>
+                            <div className="my-3">
                                 <Row style={{ width: "90%", maxWidth: "640px", margin: "auto" }}>
                                     <Col {...spanM}>
                                         <h5 className="text-white">Website Redesign and Maintain</h5>
@@ -162,7 +165,7 @@ export default function JacobD() {
                                     </Col>
                                 </Row>
                             </div>
-                            <div>
+                            <div className="my-3">
                                 <Row style={{ width: "90%", maxWidth: "640px", margin: "auto" }}>
                                     <Col {...spanM}>
                                         <h5 className="text-white">Website Redesign and Maintain</h5>
@@ -180,7 +183,7 @@ export default function JacobD() {
                                     </Col>
                                 </Row>
                             </div>
-                            <div>
+                            <div className="my-3">
                                 <Row style={{ width: "90%", maxWidth: "640px", margin: "auto" }}>
                                     <Col {...spanM}>
                                         <h5 className="text-white">Website Redesign and Maintain</h5>
@@ -198,7 +201,7 @@ export default function JacobD() {
                                     </Col>
                                 </Row>
                             </div>
-                            <div>
+                            <div className="my-3">
                                 <Row style={{ width: "90%", maxWidth: "640px", margin: "auto" }}>
                                     <Col {...spanM}>
                                         <h5 className="text-white">Website Redesign and Maintain</h5>
@@ -216,7 +219,7 @@ export default function JacobD() {
                                     </Col>
                                 </Row>
                             </div>
-                            <div>
+                            <div className="my-3">
                                 <Row style={{ width: "90%", maxWidth: "640px", margin: "auto" }}>
                                     <Col {...spanM}>
                                         <h5 className="text-white">Website Redesign and Maintain</h5>
@@ -234,7 +237,7 @@ export default function JacobD() {
                                     </Col>
                                 </Row>
                             </div>
-                            <div>
+                            <div className="my-3">
                                 <Row style={{ width: "90%", maxWidth: "640px", margin: "auto" }}>
                                     <Col {...spanM}>
                                         <h5 className="text-white">Website Redesign and Maintain</h5>
