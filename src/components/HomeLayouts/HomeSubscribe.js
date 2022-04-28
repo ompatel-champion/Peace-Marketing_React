@@ -76,10 +76,9 @@ class HomeSubscribe extends Component {
     }
 
     render() {
-        let facebookUrl = "https://www.facebook.com/peace.marketingau/";
-        let twitterUrl = "https://twitter.com/peacemarketing";
-        let instagramUrl = "https://www.instagram.com/peacemarketing/";
-        let linkedinUrl = "https://www.linkedin.com/peacemarketing?_l=en_US";
+        let facebookUrl = "https://www.facebook.com/dragon.soft.star.forest/";
+        let skypeUrl = "skype:silverstar710rich?chat";
+        let linkedinUrl = "https://www.linkedin.com/in/jacob-davidson-73a7a7223/";
 
         return (
             <section id="home-subscribe" className="pb-5 pt-5 bg-secondary">
@@ -116,14 +115,11 @@ class HomeSubscribe extends Component {
                         <a href={facebookUrl} target="_blank" rel="noreferrer">
                             <i className="fab fa-facebook-f"></i>
                         </a>
-                        <a href={twitterUrl} target="_blank" rel="noreferrer">
-                            <i className="fab fa-twitter"></i>
+                        <a href={skypeUrl} target="_blank" rel="noreferrer">
+                            <i className="fab fa-skype"></i>
                         </a>
                         <a href={linkedinUrl} target="_blank" rel="noreferrer">
                             <i className="fab fa-linkedin-in"></i>
-                        </a>
-                        <a href={instagramUrl} target="_blank" rel="noreferrer">
-                            <i className="fab fa-instagram"></i>
                         </a>
                     </div>
                 </div>
