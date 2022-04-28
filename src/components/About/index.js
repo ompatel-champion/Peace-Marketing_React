@@ -1,181 +1,124 @@
-import Slider from "react-slick";
+import Particles from "react-tsparticles";
+import { Row, Col, Image } from "antd";
 
-import jacobProfileImg from "../../assets/imgs/persons/JacobD-photo-70-70.jpg";
-// import akiraProfileImg from "../../assets/imgs/persons/Akira-photo-70-70.jpg";
-import gustavoProfileImg from "../../assets/imgs/persons/Gustavo-photo-70-70.jpeg";
-import pascualProfileImg from "../../assets/imgs/persons/PascualG-photo-70-70.jpg";
+import logoTrendingUP from "../../assets/imgs/logos/trending-up.png";
+import photoJacobD from "../../assets/imgs/persons/JacobD-photo.jpg";
 
 export default function About() {
-
-    const settings = {
-        dots: true,
-        infinite: true,
-        speed: 500,
-        slidesToShow: 3,
-        slidesToScroll: 1,
-        responsive: [
-            {
-                breakpoint: 1024,
-                settings: {
-                    slidesToShow: 2,
-                    slidesToScroll: 1,
-                    infinite: true,
-                    dots: true
-                }
-            },
-            {
-                breakpoint: 600,
-                settings: {
-                    slidesToShow: 1,
-                    slidesToScroll: 1,
-                    initialSlide: 1
-                }
-            },
-            {
-                breakpoint: 480,
-                settings: {
-                    slidesToShow: 1,
-                    slidesToScroll: 1
-                }
-            }
-        ]
-    };
-    const personImgStyle = {
-        width: "70px",
-        borderRadius: "50%"
-    }
-    const summaryStyle = {
-        color: "#5E6069",
-        textTransform: "uppercase",
-        fontSize: "16px",
-        lineHeight: "1.4",
-        marginBottom: "8px"
-    };
-    const styleOne = {
-        color: "#5E6069",
-        textTransform: "uppercase",
-        fontSize: "18px",
-        lineHeight: "1.4",
-        marginBottom: "2px"
-    };
-    const styleTwo = {
-        color: "#f9e54c",
-        textTransform: "uppercase",
-        fontSize: "36px"
+    let span = {
+        lg: 12,
+        md: 12,
+        sm: 24
     }
 
     return (
-        <section id="home-team" className="pt-5 pb-5 bg-dark">
-            <div className="container">
-                <div className="row">
-                    <h2 className="text-white">
-                        Our Team
-                    </h2>
-                    <p className="text-white">
-                        We interview dozens of candidates before each hire and promote long-term workings relationships. Every member of our team is ready to deliver immediate value to your project.
-                    </p>
-                </div>
-
-                <div className="row pt-1 pb-1 mw-90 align">
-                    <Slider {...settings}>
-                        <div className="text-white">
-                            <div className="team-person-div hover-shadow">
-                                <div className="row align-items-center pb-2">
-                                    <div className="col col-md-3 col-sm-4 col-4">
-                                        <img src={jacobProfileImg} style={personImgStyle} alt="IT SEO Jacob Davidson"></img>
+        <Row style={{ padding: "250px 0 150px 0", backgroundColor: "#000000" }}>
+            <Col span={24} className="container">
+                <Row>
+                    <div className="background-overlay">
+                        <Particles
+                            params={{
+                                particles: {
+                                    number: {
+                                        value: 70,
+                                        density: {
+                                            enable: true,
+                                            value_area: 2000
+                                        }
+                                    },
+                                    color: {
+                                        value: "#ffffff"
+                                    },
+                                    shape: {
+                                        type: "star",
+                                        stroke: {
+                                            width: 0,
+                                            color: "#000000"
+                                        },
+                                        polygon: {
+                                            nb_sides: 5,
+                                        },
+                                        image: {
+                                            src: "img/github.svg",
+                                            width: 100,
+                                            height: 100
+                                        }
+                                    },
+                                    opacity: {
+                                        value: 0.5,
+                                        random: false,
+                                        anim: {
+                                            enable: false,
+                                            speed: 1,
+                                            opacity_min: 0.1,
+                                            sync: false
+                                        }
+                                    },
+                                    size: {
+                                        value: 3,
+                                        random: true,
+                                        anim: {
+                                            enable: false,
+                                            speed: 40,
+                                            size_min: 0.1,
+                                            sync: false
+                                        }
+                                    },
+                                    line_linked: {
+                                        enable: false,
+                                        distance: 150,
+                                        color: "#ffffff",
+                                        opacity: 0.4,
+                                        width: 1
+                                    },
+                                    move: {
+                                        enable: true,
+                                        speed: 1,
+                                        direction: "none",
+                                        random: false,
+                                        straight: false,
+                                        out_mode: "out",
+                                        bounce: false,
+                                        attract: {
+                                            enable: false,
+                                            rotateX: 600,
+                                            rotateY: 1200
+                                        }
+                                    }
+                                },
+                            }}
+                        />
+                    </div>
+                </Row>
+                <Row>
+                    <div className="container z-1" style={{ position: 'inherit' }}>
+                        <Col>
+                            <Row>
+                                <Col span={24}>
+                                    <h3 className="text-white text-center">About Us</h3>
+                                    <div style={{ margin: "auto", maxWidth: "100px" }}>
+                                        <Image src={logoTrendingUP} className="text-center" />
                                     </div>
-                                    <div className="col col-md-9 col-sm-8 col-8">
-                                        <strong>Jacob Davidson</strong>
-                                    </div>
-                                </div>
-                                <div className="row pt-3">
-                                    <h4 className="text-center">CEO & Communicator</h4>
-                                </div>
-                                <div className="row">
-                                    <p style={summaryStyle}>Summary</p>
-                                    <p>
-                                        Through Jacob's work with startups at TechFarms and TechFarms Capital, he saw the critical...
+                                    <h6 className="text-white text-center my-3">
+                                        We create together, measure always, and revise often, ensuring your customers stay at the focus.
+                                    </h6>
+                                </Col>
+                            </Row>
+                            <Row gutter={24} >
+                                <Col {...span}>
+                                    <Image src={photoJacobD} />
+                                </Col>
+                                <Col {...span}>
+                                    <p className="text-white">
+                                        Peace Marketing was founded by Jacob Davidson in 2017 – with a focus on providing small business and startups with strategic advice on marketing in a digital landscape. Jacob saw the gap between the ‘big wig’ agencies and hefty retainers and saw the need for ethical and affordable marketing advice and implementation. After many years of working ‘in-house’ and ‘agency-side’ roles he was able to identify the disconnect between both efforts and implementing campaigns across different channels.
                                     </p>
-                                </div>
-                                <div className="row">
-                                    <div className="w-50">
-                                        <p style={styleOne}>Experience</p>
-                                        <p><span style={styleTwo}>15+</span> years</p>
-                                    </div>
-                                    <div className="w-50">
-                                        <p style={styleOne}>Projects</p>
-                                        <p><span style={styleTwo}>∞</span></p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="text-white">
-                            <div className="team-person-div hover-shadow">
-                                <div className="row align-items-center pb-2">
-                                    <div className="col col-md-3 col-sm-4 col-4">
-                                        <img src={gustavoProfileImg} style={personImgStyle} alt="Website Programmer Akira Sato"></img>
-                                    </div>
-                                    <div className="col col-md-9 col-sm-8 col-8">
-                                        <strong>Gustavo Adolfo L</strong>
-                                    </div>
-                                </div>
-                                <div className="row pt-3">
-                                    <h4 className="text-center">Fulltime Developer</h4>
-                                </div>
-                                <div className="row">
-                                    <p style={summaryStyle}>Summary</p>
-                                    <p>
-                                        Through Jacob's work with startups at TechFarms and TechFarms Capital, he saw the critical...
-                                    </p>
-                                </div>
-                                <div className="row">
-                                    <div className="w-50">
-                                        <p style={styleOne}>Experience</p>
-                                        <p><span style={styleTwo}>15+</span> years</p>
-                                    </div>
-                                    <div className="w-50">
-                                        <p style={styleOne}>Projects</p>
-                                        <p><span style={styleTwo}>∞</span></p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="text-white">
-                            <div className="team-person-div hover-shadow">
-                                <div className="row align-items-center pb-2">
-                                    <div className="col col-md-3 col-sm-4 col-4">
-                                        <img src={pascualProfileImg} style={personImgStyle} alt="Website Developer Pascual Garcia Congrains"></img>
-                                    </div>
-                                    <div className="col col-md-9 col-sm-8 col-8">
-                                        <strong>Pascual Garcia Congrains</strong>
-                                    </div>
-                                </div>
-                                <div className="row pt-3">
-                                    <h4 className="text-center">Web Developer</h4>
-                                </div>
-                                <div className="row">
-                                    <p style={summaryStyle}>Summary</p>
-                                    <p>
-                                        Through Jacob's work with startups at TechFarms and TechFarms Capital, he saw the critical...
-                                    </p>
-                                </div>
-                                <div className="row">
-                                    <div className="w-50">
-                                        <p style={styleOne}>Experience</p>
-                                        <p><span style={styleTwo}>15+</span> years</p>
-                                    </div>
-                                    <div className="w-50">
-                                        <p style={styleOne}>Projects</p>
-                                        <p><span style={styleTwo}>∞</span></p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </Slider>
-                </div>
-            </div>
-        </section>
+                                </Col>
+                            </Row>
+                        </Col>
+                    </div>
+                </Row>
+            </Col>
+        </Row>
     );
 }
-
 
