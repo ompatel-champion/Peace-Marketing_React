@@ -112,14 +112,14 @@ export default function GustavoL() {
                                     <Image src={profilePhoto} />
                                 </Col>
                                 <Col {...spanR} className="text-white">
-                                    <h2 className="text-white">Jacob Peace Davidson</h2>
-                                    <h4 className="text-white">CEO & Communicator</h4>
+                                    <h2 className="text-white">Gustavo Adolfo L</h2>
+                                    <h4 className="text-white">Website Developer</h4>
                                     <p><strong>Location: </strong>46 Arrabri Ave Jindalee QLD 4074, Australia </p>
                                     <p>
                                         Founder of multiple successful tech companies – focused on solving big industry problems with innovation.
                                     </p>
-                                    <p><strong>Experience: </strong>15+ years</p>
-                                    <p><strong>Projects: </strong>∞</p>
+                                    <p><strong>Experience: </strong>5+ years</p>
+                                    <p><strong>Projects: </strong>3</p>
                                 </Col>
                             </Row>
                         </Col>

@@ -25,9 +25,9 @@ class HomeTeam extends Component {
                 name: "Gustavo Adolfo L",
                 photo: gustavoProfileImg,
                 position: "Web Developer",
-                excerpt: "Founder of multiple successful tech companies – focused on solving big industry problems with innovation",
-                experiences: "15",
-                projects: "∞"
+                excerpt: "Website developer based on Framework: WordPress, Shopify, SquareSpace, Wix, etc.",
+                experiences: "7",
+                projects: "3"
             },
             {
                 id: 3,
@@ -35,9 +35,9 @@ class HomeTeam extends Component {
                 name: "Pascual Garcia Congrains",
                 photo: pascualProfileImg,
                 position: "Web Developer",
-                excerpt: "Founder of multiple successful tech companies – focused on solving big industry problems with innovation",
-                experiences: "15",
-                projects: "∞"
+                excerpt: "JS framework based Website developer(React, Angular, Node, Express, etc).",
+                experiences: "5",
+                projects: "100"
             },
         ]
 
@@ -102,22 +102,24 @@ class HomeTeam extends Component {
             return (
                 <div className="text-white">
                     <a href={"/teams/" + props.slug} className="team-person-div hover-shadow gray-border">
-                        <div className="row align-items-center pb-2">
-                            <div className="col col-md-3 col-sm-4 col-4">
-                                <img src={props.photo} style={personImgStyle} alt="IT SEO Jacob Davidson"></img>
-                            </div>
-                            <div className="col col-md-9 col-sm-8 col-8">
-                                <strong className="text-white">{props.name}</strong>
-                            </div>
-                        </div>
-                        <div className="row pt-3">
-                            <h4 className="text-center text-white">{props.position}</h4>
-                        </div>
                         <div className="row">
-                            <p style={summaryStyle}>Summary</p>
-                            <p className="text-white">
-                                {props.excerpt}...
-                            </p>
+                            <div className="row align-items-center pb-2">
+                                <div className="col col-md-3 col-sm-4 col-4">
+                                    <img src={props.photo} style={personImgStyle} alt="IT SEO Jacob Davidson"></img>
+                                </div>
+                                <div className="col col-md-9 col-sm-8 col-8">
+                                    <strong className="text-white">{props.name}</strong>
+                                </div>
+                            </div>
+                            <div className="row pt-3">
+                                <h4 className="text-center text-white">{props.position}</h4>
+                            </div>
+                            <div className="row">
+                                <p style={summaryStyle}>Summary</p>
+                                <p className="text-white">
+                                    {props.excerpt}...
+                                </p>
+                            </div>
                         </div>
                         <div className="row">
                             <div className="w-50">

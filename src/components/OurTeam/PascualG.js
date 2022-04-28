@@ -118,8 +118,8 @@ export default function PascualG() {
                                     <p>
                                         Founder of multiple successful tech companies – focused on solving big industry problems with innovation.
                                     </p>
-                                    <p><strong>Experience: </strong>15+ years</p>
-                                    <p><strong>Projects: </strong>∞</p>
+                                    <p><strong>Experience: </strong>5+ years</p>
+                                    <p><strong>Projects: </strong>100+</p>
                                 </Col>
                             </Row>
                         </Col>
