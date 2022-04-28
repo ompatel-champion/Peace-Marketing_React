@@ -1,5 +1,6 @@
 import Particles from "react-tsparticles";
 import { Row, Col, Image } from "antd";
+import HomeWhatWeDo from '../HomeLayouts/HomeWhatWeDo';
 
 import logoTrendingUP from "../../assets/imgs/logos/trending-up.png";
 import photoJacobD from "../../assets/imgs/persons/JacobD-photo.jpg";
@@ -114,6 +115,7 @@ export default function About() {
                                     </p>
                                 </Col>
                             </Row>
+                            <HomeWhatWeDo />
                         </Col>
                     </div>
                 </Row>
