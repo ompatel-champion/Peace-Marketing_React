@@ -1,6 +1,6 @@
 import React, { useRef, useState } from 'react';
 import emailjs from 'emailjs-com';
-import { Form, Input, InputNumber, Button, Result } from "antd";
+import { Form, Input, InputNumber, Button } from "antd";
 
 export const ContactForm = () => {
     const form = useRef();

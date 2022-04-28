@@ -1,25 +1,6 @@
 import Particles from "react-tsparticles";
-import { Row, Col, Form, Input, InputNumber, Button } from "antd";
+import { Row, Col } from "antd";
 import { ContactForm } from './ContactForm';
-
-const layout = {
-    labelCol: {
-        span: 24,
-    },
-    wrapperCol: {
-        span: 24,
-    },
-};
-const validateMessages = {
-    required: '${label} is required!',
-    types: {
-        email: '${label} is not a valid email!',
-        number: '${label} is not a valid number!',
-    },
-    number: {
-        range: '${label} must be between ${min} and ${max}',
-    },
-};
 
 export default function Contact() {
     let span = {
@@ -27,9 +8,6 @@ export default function Contact() {
         md: 12,
         sm: 24
     }
-    const onFinish = (values) => {
-        console.log(values);
-    };
 
     return (
         <Row style={{ padding: "250px 0 150px 0", backgroundColor: "#000000" }}>

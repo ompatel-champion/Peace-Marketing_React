@@ -1,6 +1,6 @@
 import Particles from "react-tsparticles";
 import { Row, Col, Image, Collapse, Space, Carousel } from "antd";
-import profilePhoto from "../../assets/imgs/persons/JacobD-photo.jpg";
+import profilePhoto from "../../assets/imgs/persons/PascualG-photo.jpg";
 import imgOne from '../../assets/imgs/home/1.webp';
 import imgTwo from '../../assets/imgs/home/2.webp';
 import imgThree from '../../assets/imgs/home/3.webp';
@@ -9,7 +9,7 @@ import imgFive from '../../assets/imgs/home/5.webp';
 import imgSix from '../../assets/imgs/home/6.webp';
 
 const { Panel } = Collapse;
-export default function JacobD() {
+export default function PascualG() {
     let spanL = {
         lg: 6,
         md: 6,
@@ -112,7 +112,7 @@ export default function JacobD() {
                                     <Image src={profilePhoto} />
                                 </Col>
                                 <Col {...spanR} className="text-white">
-                                    <h2 className="text-white">Jacob Peace Davidson</h2>
+                                    <h2 className="text-white">Pascual Garcia Congrains</h2>
                                     <h4 className="text-white">CEO & Communicator</h4>
                                     <p><strong>Location: </strong>46 Arrabri Ave Jindalee QLD 4074, Australia </p>
                                     <p>

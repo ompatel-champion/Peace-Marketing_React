@@ -8,6 +8,39 @@ import pascualProfileImg from "../../assets/imgs/persons/PascualG-photo-70-70.jp
 
 class HomeTeam extends Component {
     render() {
+        const teamMembers = [
+            {
+                id: 1,
+                slug: "jacobd",
+                name: "Jacob Peace Davidson",
+                photo: jacobProfileImg,
+                position: "CEO & Communicator",
+                excerpt: "Founder of multiple successful tech companies – focused on solving big industry problems with innovation",
+                experiences: "15",
+                projects: "∞"
+            },
+            {
+                id: 2,
+                slug: "gustavol",
+                name: "Gustavo Adolfo L",
+                photo: gustavoProfileImg,
+                position: "Web Developer",
+                excerpt: "Founder of multiple successful tech companies – focused on solving big industry problems with innovation",
+                experiences: "15",
+                projects: "∞"
+            },
+            {
+                id: 3,
+                slug: "pascualg",
+                name: "Pascual Garcia Congrains",
+                photo: pascualProfileImg,
+                position: "Web Developer",
+                excerpt: "Founder of multiple successful tech companies – focused on solving big industry problems with innovation",
+                experiences: "15",
+                projects: "∞"
+            },
+        ]
+
         const settings = {
             dots: true,
             infinite: true,
@@ -65,6 +98,42 @@ class HomeTeam extends Component {
             fontSize: "36px"
         }
 
+        const Team = (props) => {
+            return (
+                <div className="text-white">
+                    <a href={"/teams/" + props.slug} className="team-person-div hover-shadow gray-border">
+                        <div className="row align-items-center pb-2">
+                            <div className="col col-md-3 col-sm-4 col-4">
+                                <img src={props.photo} style={personImgStyle} alt="IT SEO Jacob Davidson"></img>
+                            </div>
+                            <div className="col col-md-9 col-sm-8 col-8">
+                                <strong className="text-white">{props.name}</strong>
+                            </div>
+                        </div>
+                        <div className="row pt-3">
+                            <h4 className="text-center text-white">{props.position}</h4>
+                        </div>
+                        <div className="row">
+                            <p style={summaryStyle}>Summary</p>
+                            <p className="text-white">
+                                {props.excerpt}...
+                            </p>
+                        </div>
+                        <div className="row">
+                            <div className="w-50">
+                                <p style={styleOne}>Experience</p>
+                                <p><span style={styleTwo}>{props.experiences}+</span> <span className="text-white">years</span></p>
+                            </div>
+                            <div className="w-50">
+                                <p style={styleOne}>Projects</p>
+                                <p><span style={styleTwo}>{props.projects}</span></p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            )
+        }
+
         return (
             <section id="home-team" className="pt-5 pb-5">
                 <div className="container">
@@ -79,99 +148,13 @@ class HomeTeam extends Component {
 
                     <div className="row pt-1 pb-1 mw-90 align">
                         <Slider {...settings}>
-                            <div className="text-white">
-                                <a href="/teams/jacobd" className="team-person-div hover-shadow gray-border">
-                                    <div className="row align-items-center pb-2">
-                                        <div className="col col-md-3 col-sm-4 col-4">
-                                            <img src={jacobProfileImg} style={personImgStyle} alt="IT SEO Jacob Davidson"></img>
-                                        </div>
-                                        <div className="col col-md-9 col-sm-8 col-8">
-                                            <strong className="text-white">Jacob Davidson</strong>
-                                        </div>
-                                    </div>
-                                    <div className="row pt-3">
-                                        <h4 className="text-center">CEO & Communicator</h4>
-                                    </div>
-                                    <div className="row">
-                                        <p style={summaryStyle}>Summary</p>
-                                        <p className="text-white">
-                                            Founder of multiple successful tech companies – focused on solving big industry problems with innovation...
-                                        </p>
-                                    </div>
-                                    <div className="row">
-                                        <div className="w-50">
-                                            <p style={styleOne}>Experience</p>
-                                            <p><span style={styleTwo}>15+</span> <span className="text-white">years</span></p>
-                                        </div>
-                                        <div className="w-50">
-                                            <p style={styleOne}>Projects</p>
-                                            <p><span style={styleTwo}>∞</span></p>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                            <div className="text-white">
-                                <div className="team-person-div hover-shadow gray-border">
-                                    <div className="row align-items-center pb-2">
-                                        <div className="col col-md-3 col-sm-4 col-4">
-                                            <img src={gustavoProfileImg} style={personImgStyle} alt="Website Programmer Akira Sato"></img>
-                                        </div>
-                                        <div className="col col-md-9 col-sm-8 col-8">
-                                            <strong>Gustavo Adolfo L</strong>
-                                        </div>
-                                    </div>
-                                    <div className="row pt-3">
-                                        <h4 className="text-center">Fulltime Developer</h4>
-                                    </div>
-                                    <div className="row">
-                                        <p style={summaryStyle}>Summary</p>
-                                        <p className="text-white">
-                                            Through Jacob's work with startups at TechFarms and TechFarms Capital, he saw the critical...
-                                        </p>
-                                    </div>
-                                    <div className="row">
-                                        <div className="w-50">
-                                            <p style={styleOne}>Experience</p>
-                                            <p><span style={styleTwo}>15+</span> <span className="text-white">years</span></p>
-                                        </div>
-                                        <div className="w-50">
-                                            <p style={styleOne}>Projects</p>
-                                            <p><span style={styleTwo}>∞</span></p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="text-white">
-                                <div className="team-person-div hover-shadow  gray-border">
-                                    <div className="row align-items-center pb-2">
-                                        <div className="col col-md-3 col-sm-4 col-4">
-                                            <img src={pascualProfileImg} style={personImgStyle} alt="Website Developer Pascual Garcia Congrains"></img>
-                                        </div>
-                                        <div className="col col-md-9 col-sm-8 col-8">
-                                            <strong>Pascual Garcia Congrains</strong>
-                                        </div>
-                                    </div>
-                                    <div className="row pt-3">
-                                        <h4 className="text-center">Web Developer</h4>
-                                    </div>
-                                    <div className="row">
-                                        <p style={summaryStyle}>Summary</p>
-                                        <p>
-                                            Through Jacob's work with startups at TechFarms and TechFarms Capital, he saw the critical...
-                                        </p>
-                                    </div>
-                                    <div className="row">
-                                        <div className="w-50">
-                                            <p style={styleOne}>Experience</p>
-                                            <p><span style={styleTwo}>15+</span> years</p>
-                                        </div>
-                                        <div className="w-50">
-                                            <p style={styleOne}>Projects</p>
-                                            <p><span style={styleTwo}>∞</span></p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                            {
+                                teamMembers.map((team, i) => {
+                                    return (
+                                        <Team key={i} {...team} />
+                                    );
+                                })
+                            }
                         </Slider>
                     </div>
                 </div>

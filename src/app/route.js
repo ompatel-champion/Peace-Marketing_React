@@ -3,6 +3,8 @@ import About from '../components/About';
 import Contact from '../components/Contact';
 import Home from '../components/HomeLayouts';
 import JacobD from '../components/OurTeam/JacobD';
+import GustavoL from '../components/OurTeam/GustavoL';
+import PascualG from '../components/OurTeam/PascualG';
 
 function AppRoute() {
     return (
@@ -13,6 +15,8 @@ function AppRoute() {
                 <Route path="/contact" element={<Contact />} />
 
                 <Route path="/teams/jacobd" element={<JacobD />} />
+                <Route path="/teams/gustavol" element={<GustavoL />} />
+                <Route path="/teams/pascualg" element={<PascualG />} />
             </Routes>
         </div>
     );

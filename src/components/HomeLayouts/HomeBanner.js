@@ -121,7 +121,7 @@ class HomeBanner extends Component {
                             </div>
                         </div>
                         <div className="col col-lg-6 col-md-6 col-sm-12 col-12 d-flex justify-content-end">
-                            <img src={bannerLogo} style={{ width: "70%", maxWidth: "320px" }} />
+                            <img src={bannerLogo} alt="" style={{ width: "70%", maxWidth: "320px" }} />
                         </div>
                     </div>
                 </div>

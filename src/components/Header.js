@@ -90,12 +90,6 @@ class Header extends Component {
             height: "auto"
         }
 
-        const headerStyle = {
-            display: "flex",
-            justifyContent: "space-between",
-            alignItems: "center"
-        }
-
         const menuUrl = {
             home: "/",
             about: "/about",
@@ -156,13 +150,13 @@ class Header extends Component {
                         <span></span>
                         <ul id="menu">
                             <li className="active">
-                                <Link to={menuUrl.home} onClick={this.menuHide.bind()}>Home</Link>
+                                <Link to={menuUrl.home} onClick={this.menuHide.bind()} rel="noreferrer">Home</Link>
                             </li>
                             <li>
-                                <Link to={menuUrl.about} onClick={this.menuHide.bind()}>About</Link>
+                                <Link to={menuUrl.about} onClick={this.menuHide.bind()} rel="noreferrer">About</Link>
                             </li>
                             <li>
-                                <Link to={menuUrl.contact} onClick={this.menuHide.bind()}>Contact</Link>
+                                <Link to={menuUrl.contact} onClick={this.menuHide.bind()} rel="noreferrer">Contact</Link>
                             </li>
 
                             <div id="menu-bottom">
@@ -182,17 +176,17 @@ class Header extends Component {
                                 </form>
                                 <ul className="nav col-lg-auto my-2 justify-content-center my-md-0 text-small">
                                     <li>
-                                        <a href="https://www.facebook.com/dragon.soft.star.forest/" className="nav-link text-white" target={"_blank"}>
+                                        <a href="https://www.facebook.com/dragon.soft.star.forest/" className="nav-link text-white" rel="noreferrer" target={"_blank"}>
                                             <i className="fab fa-facebook-f"></i>
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="skype:silverstar710rich?chat" className="nav-link text-white" target={"_blank"}>
+                                        <a href="skype:silverstar710rich?chat" className="nav-link text-white" rel="noreferrer" target={"_blank"}>
                                             <i className="fab fa-skype"></i>
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="https://www.linkedin.com/in/jacob-davidson-73a7a7223/" className="nav-link text-white" target={"_blank"}>
+                                        <a href="https://www.linkedin.com/in/jacob-davidson-73a7a7223/" className="nav-link text-white" rel="noreferrer" target={"_blank"}>
                                             <i className="fab fa-linkedin"></i>
                                         </a>
                                     </li>
@@ -260,17 +254,17 @@ class Header extends Component {
                                     <Col span={6}>
                                         <ul className="nav col-lg-auto my-2 justify-content-center my-md-0 text-small">
                                             <li>
-                                                <a href="https://www.facebook.com/dragon.soft.star.forest/" className="nav-link text-white" target={"_blank"}>
+                                                <a href="https://www.facebook.com/dragon.soft.star.forest/" className="nav-link text-white" rel="noreferrer" target={"_blank"}>
                                                     <i className="fab fa-facebook-f social-icons"></i>
                                                 </a>
                                             </li>
                                             <li>
-                                                <a href="skype:silverstar710rich?chat" className="nav-link text-white" target={"_blank"}>
+                                                <a href="skype:silverstar710rich?chat" className="nav-link text-white" rel="noreferrer" target={"_blank"}>
                                                     <i className="fab fa-skype social-icons"></i>
                                                 </a>
                                             </li>
                                             <li>
-                                                <a href="https://www.linkedin.com/in/jacob-davidson-73a7a7223/" className="nav-link text-white" target={"_blank"}>
+                                                <a href="https://www.linkedin.com/in/jacob-davidson-73a7a7223/" className="nav-link text-white" rel="noreferrer" target={"_blank"}>
                                                     <i className="fab fa-linkedin social-icons"></i>
                                                 </a>
                                             </li>
